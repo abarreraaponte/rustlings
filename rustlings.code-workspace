@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"suitecloud.developerAssistant.disableWelcomeNotification": true,
+		"workbench.editor.autoLockGroups": {
+			"default": true
+		}
+	}
 }
