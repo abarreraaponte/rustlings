@@ -12,6 +12,16 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+fn calculate_price_of_apples(qty: i32) -> i32 {
+	let mut cost = 2;
+
+	if qty > 40 {
+		cost = 1;
+	}
+
+	return qty * cost;
+}
+
 fn main() {
     // You can optionally experiment here.
 }
