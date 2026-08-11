@@ -1,7 +1,7 @@
 // Tests are important to ensure that your code does what you think it should
 // do.
 
-fn is_even(n: i64) -> bool {
+pub fn is_even(n: i64) -> bool {
     n % 2 == 0
 }
 
@@ -16,8 +16,9 @@ mod tests {
 
     #[test]
     fn you_can_assert() {
+		use crate::is_even;
         // TODO: Test the function `is_even` with some values.
-        assert!();
-        assert!();
+        assert!(is_even(2));
+        assert!(!is_even(3));
     }
 }
